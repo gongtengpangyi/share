@@ -1,0 +1,30 @@
+#admin_commodity-comm_create-div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comm_create_description{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.comm_create_submit{
+    width: 20%;
+    margin: 20px auto;
+}
+
+.comm_create_description li{
+    line-height: 50px;
+}
+
+.comm_create_description li span{
+    display: inline-block;
+    line-height: inherit;
+    width: 100px;
+}
+
+#imggroup_wrap div.img_div{
+    display: inline-block;
+    /*height: 90px;*/
+    /*width: 90px;*/
+}

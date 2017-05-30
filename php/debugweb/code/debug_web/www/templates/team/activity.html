@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%$activity_title%></title>
+    <%include file="common.html"%>
+    <script>
+        var activity_id='<%$activity_id%>';
+        var user_name='<%$user_name%>';
+        var user_id='<%$user_id%>';
+        var activity_picture='<%$activity_picture%>';
+        var activity_title='<%$activity_title%>';
+        var activity_time='<%$activity_time%>';
+        var activity_sections=<%$activity_sections%>;
+    </script>
+    <script type="text/javascript" src="js/team.js"></script>
+    <link type="text/css" href="css/team.css" rel="stylesheet"/>
+</head>
+<body class="activity">
+<%include file="title.html"%>
+<img id="team-activity-delete-btn" class="btn show-limit-user1 show-limit-user0 show-limit-admin" src="img/btn_delete.jpg">
+<img id="team-activity-write-btn" class="btn show-limit-user1 show-limit-user0 show-limit-admin" src="img/btn_write.jpg">
+<div id="activity-write-tool-dialog">
+    <button id="activity-write-btn-addImg">添加图片</button>
+    <button id="activity-write-btn-addP">添加段落</button>
+    <button id="activity-write-btn-delObj">删除元素</button>
+    <button id="activity-write-btn-save">保存</button>
+    <button id="activity-write-btn-exit">取消</button>
+</div>
+<div id="team-activity-div">
+    <div class="title"><%$activity_title%></div>
+</div>
+    <div class="writer">作者： <%$user_name%></div>
+    <div class="time">活动时间： <%$activity_time%></div>
+</body>
+</html>

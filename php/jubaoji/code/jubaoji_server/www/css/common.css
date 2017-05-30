@@ -1,0 +1,240 @@
+.hr{
+    clear: both;
+    margin-bottom: 0;
+}
+
+.none_elect{
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body html{
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+#header{
+    width:100%;
+    margin: auto;
+    height: 50px;
+    line-height: 40px;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border-bottom: 1px solid #D3D3D3;
+
+}
+
+#header .title{
+    width: 95%;
+    margin: auto;
+}
+
+#header .title p{
+    float: left;
+    margin: 10px 10px 0px 10px;
+}
+
+#header .title a{
+    float: left;
+    margin: 10px 10px 0px 10px;
+}
+
+#header .user p{
+    float: right;
+    margin: 10px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.title strong{
+    font-weight: bold;
+    float: left;
+    font-size: 24px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    float: left;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 20%;
+    background-color: lightgrey;
+    height: 100%;
+    padding: 0;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 0;
+    min-height: 1000px;
+}
+
+.left .menu{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.menu>li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 2.5em;
+    text-align: center;
+    position: relative;
+    background-color: lightgrey;
+}
+
+.menu>li>span{
+    background-color: white;
+    line-height: 2.5em;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #D3D3D3;
+    cursor: pointer;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.menuItem{
+    display: none;
+}
+
+.menuItem li{
+    list-style: none;
+    width: 90%;
+    line-height: 2.5em;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: 10%;
+    background-color: white;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    cursor: pointer;
+
+}
+
+.home{
+    float: left;
+}
+
+.main{
+    width: 80%;
+    background-color: white;
+    float: right;
+    padding-bottom: 80px;
+}
+.main-title{
+    width: 90%;
+    margin: auto;
+    padding: 20px 20px;
+}
+.main-title strong{
+    line-height: 1.6;
+    color: #0e90d2;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.main-part ul{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.main-part ul li{
+    width: 33%;
+    height: 150px;
+    border: 1px solid #e9ecf1;
+    margin-left: -1px;
+    float: left;
+    line-height: 150px;
+}
+
+.pageGro{
+    margin: 20px;
+    /*float: left;*/
+}
+
+/*页码*/
+.pageGro{
+    clear: both;
+    padding-left: 0;
+    margin: 1.5rem 0;
+    list-style: none;
+    color: #999999;
+    text-align: left;
+}
+
+.pageGro p{
+    height: 20px;
+    width: 70px;
+    border: solid 1px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.pageGro .pageList{
+    display: inline-block;
+    float: left;
+}
+.pageList li{
+    height: 20px;
+    width: 30px;
+    border: solid 1px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.main-part ul{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+.main-part ul li{
+    width: 33%;
+    height: 150px;
+    border: 1px solid #e9ecf1;
+    margin-left: -1px;
+    float: left;
+    line-height: 150px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.img_button{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    float: right;
+    cursor:pointer;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,145 @@
+﻿1.机构申请，post传，url="index.php?controller=login&action=register_submit" 参数以json的形式传
+参数如下：(所有参数均非空)
+    {
+      "name": "机构名称",
+      "license": "机构执照",
+      "identity_front": "机构法人身份证正面",
+      "identity_behind": "机构法人身份证反面",
+      "account": "机构法人联系方式（以后的登录账号）",
+      "phone": "机构联系方式",
+      "icon": "机构头像",
+      "auction_items": {
+        "1": "拍品1（base64）",
+        "2": "拍品2（base64）",
+        "3": "拍品3（base64）"
+      }
+    }
+
+ 具体可以参考$.post()或$.ajax()的教程
+
+
+2.拍品列表初始化获得最多6个拍品列表commodity_list已及拍品总数commodity_count已及成为了js变量（Comm_list.js）
+每个分页的herf=index.php?controller=admin_commodity&action=comm_list&page=1(page为当前页数，如果没有则为1)
+
+3.拍品审核每页获得1个commodity 并且 获取了总的commodity_count
+
+4.后台管理的status或state统一 -1为未审核，-2为审核不通过，大于等于0为通过
+
+
+@程伟佳  拍品审核的协议：
+    1）通过审核： post请求，url=index.php?controller=admin_commodity&action=comm_audit_pass，
+        post参数：{admin_id:...,comm_id:...}
+        （其中admin_id是登录的id，可以用Cookie.getCookie(Cookie.USER_ID)来获取，comm_id是对应的商品id）
+        返回：{"status":"success","msg":"拍品审核通过"}或{"status":"error","msg":"上传失败"}
+    2）驳回审核： post请求，url=index.php?controller=admin_commodity&action=comm_audit_out，
+        post参数：{admin_id:...,comm_id:...,remark}(admin和comm同上，remark是备注内容)
+        返回：{"status":"success","msg":"拍品审核驳回"}或{"status":"error","msg":"上传失败"}
+
+        $.post("test.php", {admin_id: "John", time: "2pm" },
+           function(data){
+             alert("Data Loaded: " + data);
+             JSON.prase()
+           });
+     3)分配专场：post请求，url为index.php?controller=admin_commodity&action=comm_audit_session，
+         参数{comm_id:...,session_id:...}
+         返回：{"status":"success","msg":"专场选择成功"}或{"status":"error","msg":"专场选择失败"}
+
+@王诗雨 先将拍品审核上传上来（post方式）url="index.php?controller=login&action=register_submit"
+    参数为直接将表单格式化: $("具体表单").serialize();
+
+
+2017-3-14 前端组任务：
+    程伟佳：1）把图片问题解决了
+            2）优化一下前面写的几段代码（能用jquery的地方不要字符拼接）
+            3）把select的默认选项设置完成
+            4）给拍品列表每个item添加一个点击链接（用js完成）url=index.php?controller=admin_commodity&action=comm_introduce&id=拍品id
+            5）给专场列表每个item添加一个点击链接（用js完成）url=index.php?controller=admin_commodity&action=session_introduce&id=拍场id
+            6）把专场列表的界面好好优化下把拍品详情（列表的链接）展示一下
+            7）
+            ps：前面五个问题其实十分钟就可以全部搞定
+
+    王诗雨：1）先把昨天的事情解决（拍品审核）
+            2)把机构列表和待审核机构的界面展示一下，具体要展示的数据已经可以打印在console中了（具体可以问程伟佳）
+
+2017-3-16 前端组任务：
+    王诗雨：先把众享的页面给写了
+    程伟佳：1.按照昨天的草图把全部拍品和拍品审核写一下（之前的全部拍品中驳回和通过的功能可能是要在拍品审核中的，我会把拍品审核的后台改好）
+            2.把拍品创建页面写好。
+    石瑜： 1.把专场创建页面写好
+           2.优化拍场详情的页面
+
+    ps：石瑜和程伟佳的创建页面包含在一个表单里，这两个先不用把ajax写好
+
+
+jquery-form.js的使用：
+    目的：针对于需要以数据流形式为参数上传图片的协议，需要表单提交而不能简单的用$.ajax来实现，但是有些时候却必须要实现异步提交表单
+    使用方式：表单中加入<input type="file">，然后在js中取到表单如：$("#form")，给其的submit事件添加函数，在函数中添加类似于ajax参数的option
+        示例：    $("#admin_running-article_create-form").submit(this.submit);
+                pr(Admin_running_article_create).submit=function (){
+                    if($(".article-title input").val()==""){
+                        alert("请输入标题");
+                    }else if($(".article-subtitle input").val()==""){
+                        alert("请输入副标题");
+                    }else if($(".article-content textarea").val()==""){
+                        alert("请输入正文");
+                    }else if($(".article-image input").val()==""){
+                        alert("请添加图片");
+                    }else{
+                        var options = {
+                            type:"POST",
+                            url:"index.php?controller=admin_running&action=article_create_submit",
+                            enctype:"multipart/form-data",
+                            contentType:"application/x-www-form-urlencoded;charset=UTF-8",
+                            headers:{
+                                "user-id":0,
+                                "access-token":Cookie.getCookie(Cookie.USER_ACCESS_TOKEN)
+                            },
+                            dataType: "json",
+                            data:{
+                                userId:0,
+                                level:0,
+                                type:0
+                            },
+                            success:function(data){
+                                console.log(data);
+                            },
+                            error: function (xhr, textStatus, errorThrown) {
+                                if ("timeout" == textStatus) {// 连接超时
+                                    alert("请求超时！");
+                                } else {// 网络异常
+                                    console.log(xhr.responseText);
+                                    //alert("网络异常！");
+                                }
+                            }
+                        };
+                        $("#admin_running-article_create-form").ajaxSubmit(options);
+                    }
+                    return false;
+                }
+        在上述示例中，表单提交的触发函数中先对表单内容进行了判断，然后对表单实行提交
+        提交中需要添加别的表单参数，全部写在option中，然后用表单的jquery对象的ajaxSubmit函数提交表单（此为jquery-form中的函数，必须先添加js，此处已在common中添加）
+        最后的return false是为了表单提交过程中防止页面跳转而实现的
+
+        2017.3.19 布置下前端组下周的任务（下周我不在，任务不算多，但是可能会遇到些你们没遇到过的问题，有问题qq问我，我抽空回答）：
+            1.石瑜抓紧把专场详情的页面搞定，获得未设定专场的拍品列表的接口和给拍品设定专场的接口我都已经写好并且和你们说过了
+                （获得是那天周六说的，专场设定的接口程伟佳清楚的，不再详述了）
+                （ps:点击添加拍品跳出弹窗，弹窗也是分页的，点击弹窗的页码，重新发送一次get请求，获取当前页面的数据并展示在弹窗内）
+            2.程伟佳，把拍品创建和专场创建搞定，接口我已经写好（准确的说是对方开的接口，我为了跨域写的转发接口）
+                参数（header和body）和之前postman中导入的对方的接口一致，只是url变了，如下：
+                添加拍品：http://localhost/index.php?controller=admin_commodity&action=comm_create_submit
+                添加专场：http://localhost/index.php?controller=admin_commodity&action=session_create_submit
+                ps。对方开的坑爹接口特么的没有多张图片，这个你们先传一张
+                (记录：添加拍品的接口参数做英文:;转中文的：；还没改)
+            3.王诗雨赶紧解决h5的界面，然后我再看有什么需要做的。
+multiple="multiple"
+
+    var appendHook = {
+        status : function(){
+            return array_status[parseInt(commodity.status)+2];
+        }
+    }
+      for(var key in strMap) {
+            var value = key in appendHook? appendHook[key].apply() : commodity[key];
+            $("<p>" + strMap[key] + ": " + value +"</p>").appendTo($divWrap);
+        }
+

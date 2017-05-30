@@ -1,0 +1,138 @@
+.home{
+
+}
+
+.home-title{
+    margin: 30px 50px 50px 50px;
+    font-size: larger;
+    color: gray;
+}
+
+.home-teachers{
+    background-image: url("/img/paper3.jpg");
+    background-size: auto;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 250px;
+    float: left;
+}
+
+.home-teachers-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    float: left;
+}
+
+.home-teachers-name{
+    float: left;
+    font-size: large;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.home-teachers-introduce{
+    clear: both;
+    margin: 0px 15px 10px 15px;
+    font-size: small;
+    width: 220px;
+    height: 180px;
+    text-indent:20px;
+    text-transform:capitalize;
+    word-wrap:break-word;
+    overflow: auto;
+}
+
+.home-majors{
+    background-image: url("/img/paper4.png");
+    background-size: cover;
+    border: solid #FFFFFF 0.5px;
+    margin: 0px 50px 50px 50px;
+}
+
+.home-majors-name{
+    float: left;
+    font-size: large;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.home-majors-introduce{
+    clear: both;
+    float: left;
+    margin: 0px 15px 30px 35px;
+    text-indent:20px;
+    text-transform:capitalize;
+    word-wrap:break-word;
+}
+
+.home-majors img{
+    float: right;
+}
+
+.home-admin{
+    margin: 40px 60px;
+}
+
+.home-admin p{
+    font-size: medium;
+}
+
+.home-teachers-add-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    float: left;
+    cursor:pointer;
+}
+
+.home-teachers-add-name{
+    float: left;
+    font-size: large;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home-teachers-add-majors{
+    clear: both;
+    width: 100%;
+}
+
+.home-teachers-add-majors div{
+    float: left;
+}
+
+.home-teachers-add-introduce{
+    clear: both;
+    margin: 0px 15px 10px 15px;
+    font-size: small;
+    width: 220px;
+    height: 100px;
+    text-indent:20px;
+    text-transform:capitalize;
+    word-wrap:break-word;
+    overflow: auto;
+}
+
+#home-teachers-add-div{
+    display:none;
+}
+
+.home-majors-add-introduce{
+    clear: both;
+    float: left;
+    width: 1000px;
+    height: 50px;
+    margin: 0px 15px 30px 35px;
+    text-indent:20px;
+    text-transform:capitalize;
+    word-wrap:break-word;
+}

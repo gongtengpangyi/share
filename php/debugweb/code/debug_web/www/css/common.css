@@ -1,0 +1,252 @@
+*{
+    font-family: "宋体", Arial, Helvetica, sans-serif;
+}
+
+hr.large{
+    border:2px solid #B8C9D6;
+    clear: both;
+}
+
+hr.small{
+    border:1px solid #B8C9D6;
+    clear: both;
+}
+
+.header{
+    height: 100px;
+    /*outline: solid gray thin;*/
+    /*background-color: #7EC4CC;*/
+}
+
+.header-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 15px 0px 50px;
+    float: left;
+}
+
+.header-name{
+    font-size: 250%;
+    float: left;
+    padding-left: 10px;
+    color: #666666;
+    /*position:absolute*/
+}
+
+.header-bar{
+    height: 100%;
+    float: left;
+    margin-left: 3.0%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-bar ul{
+}
+
+.header-bar ul li{
+    font-size: larger;
+    color: grey;
+    float: left;
+    margin-left: 30px;
+    padding: 20px 20px 20px 20px;
+    cursor:pointer;
+}
+
+.header-user{
+    float: right;
+    margin-right: 2%;
+    margin-top: 40px;
+    cursor:pointer;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 286px;
+    overflow: hidden;
+}
+
+#banner ul {
+    position: absolute;
+    list-style-type: none;
+    filter: Alpha(Opacity=80);
+    opacity: 0.8; z-index: 1002;
+    margin: 0; padding: 0;
+    bottom: 3px;
+    right: 5px;
+}
+
+#banner ul li {
+    padding: 0px 8px;
+    float: left;
+    display: block;
+    color: #FFF;
+    background: #6f4f67;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+#banner ul li.on {
+    background-color: #000;
+}
+
+#banner_list a {
+    position: absolute;
+    width: 100%;
+}
+
+#banner_list img {
+    float: left;
+    height: 100%;
+    margin-left: 20%;
+    width: 40%;
+    border: 0px;
+}
+
+#banner_list p{
+    float: right;
+    width: 20%;
+    text-align: center;
+    margin-right: 15%;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+#login-window{
+    background: #DAF3F5;
+    z-index:200;
+    position : fixed;
+    top : 100px;
+    left: 530px;
+    width: 250px;
+    height: 300px;
+    display: none;
+}
+
+#login-window .title{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#login-window .type{
+    margin: 30px;
+    width: 210px;
+}
+
+#login-window .type div{
+    float: left;
+    margin-left: 20px;
+}
+
+#login-window .info{
+    clear: both;
+    float: left;
+    margin: 20px 20px 0px 20px;
+    width: 210px;
+}
+
+#login-window .info input{
+    width: 160px;
+    height: 20px;
+}
+
+#login-window button{
+    float: left;
+    width: 50px;
+    margin:35px 0px 0px 50px ;
+}
+
+#user-window{
+    z-index:200;
+    width: 100px;
+    background: #dadada;
+    position : absolute;
+    top : 65px;
+    left: 1200px;
+    display: none;
+}
+
+#user-window p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    cursor:pointer;
+}
+
+.user-info-window{
+    z-index:200;
+    width: 400px;
+    background: #dadada;
+    position : fixed;
+    top : 100px;
+    left: 500px;
+    display: none;
+}
+
+.user-info-window img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 175px 0px 175px;
+    cursor:pointer;
+}
+
+.user-info-window div{
+    margin: 20px;
+}
+
+.user-info-window .checkbox{
+    float: left;
+    margin: 0px 10px;
+}
+
+.user-info-window textarea{
+    width: 300px;
+    height: 100px;
+    word-wrap: break-word;
+    text-indent:20px;
+    margin-left: 20px;
+}
+
+.user-info-window p{
+    clear: both;
+    margin: 20px 20px 0px 0px ;
+}
+
+.user-info-window button{
+    width: 50px;
+    height: 30px;
+    margin: 0px 0px 20px 100px;
+}
+
+#file-chooser{
+    display: none;
+}
+
+.show-limit-admin{
+    display: none;
+}
+
+.show-limit-user0{
+    display: none;
+}
+
+.show-limit-user1{
+    display: none;
+}
+
+img.btn{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    float: right;
+    cursor:pointer;
+}
+
+

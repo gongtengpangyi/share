@@ -1,0 +1,196 @@
+[2017-03-25 11:53:43] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php3DA2.tmp"],"error":[0],"size":[50022]}}
+[2017-03-25 11:54:36] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpBAB.tmp"],"error":[0],"size":[70084]}}
+[2017-03-25 11:55:11] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php93AF.tmp"],"error":[0],"size":[50022]}}
+[2017-03-25 11:55:21] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg","btn_add.jpg"],"type":["image\/jpeg","image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpBC75.tmp","C:\\Windows\\Temp\\phpBC86.tmp","C:\\Windows\\Temp\\phpBCA6.tmp"],"error":[0,0,0],"size":[50022,70084,2990]}}
+[2017-03-25 11:55:33] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpEBE1.tmp"],"error":[0],"size":[50022]}}
+[2017-03-25 11:57:48] INFO:system out-----------{"image":{"name":"4D89A19AEF26321AA15969E44126ACD4.jpg","type":"image\/jpeg","tmp_name":"C:\\Windows\\Temp\\phpF979.tmp","error":0,"size":50022}}
+[2017-03-25 11:59:46] INFO:system out-----------{"image":{"name":"0299E839DD356DA67ABC2EACF37CE703.jpg","type":"image\/jpeg","tmp_name":"C:\\Windows\\Temp\\phpC87D.tmp","error":0,"size":70084}}
+[2017-03-25 12:05:46] INFO:system out-----------{"image":{"name":"0299E839DD356DA67ABC2EACF37CE703.jpg","type":"image\/jpeg","tmp_name":"C:\\Windows\\Temp\\php4730.tmp","error":0,"size":70084}}
+[2017-03-25 12:06:10] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpA3F0.tmp","C:\\Windows\\Temp\\phpA401.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:12:28] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php684A.tmp","C:\\Windows\\Temp\\php685B.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:12:58] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpDBB7.tmp","C:\\Windows\\Temp\\phpDBC7.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:13:58] INFO:system out-----------{"image":{"name":"0299E839DD356DA67ABC2EACF37CE703.jpg","type":"image\/jpeg","tmp_name":"C:\\Windows\\Temp\\phpC57A.tmp","error":0,"size":70084}}
+[2017-03-25 12:14:24] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php2BBC.tmp"],"error":[0],"size":[70084]}}
+[2017-03-25 12:15:42] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php5F6A.tmp"],"error":[0],"size":[70084]}}
+[2017-03-25 12:16:04] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpB558.tmp","C:\\Windows\\Temp\\phpB568.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:16:20] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpF23A.tmp","C:\\Windows\\Temp\\phpF25A.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:16:41] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php4358.tmp","C:\\Windows\\Temp\\php4368.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:53:26] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE9A7.tmp","C:\\Windows\\Temp\\phpE9E6.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:53:48] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php40BE.tmp","C:\\Windows\\Temp\\php40CE.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 12:56:31] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpBBC8.tmp","C:\\Windows\\Temp\\phpBBD9.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 14:23:40] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php861C.tmp","C:\\Windows\\Temp\\php863C.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:07:51] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpB1C7.tmp","C:\\Windows\\Temp\\phpB1D8.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:08:44] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php828F.tmp","C:\\Windows\\Temp\\php82EE.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:11:20] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE318.tmp","C:\\Windows\\Temp\\phpE328.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:12:59] INFO:system out-----------2017-03-25 19:12:59
+[2017-03-25 19:12:59] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php665C.tmp","C:\\Windows\\Temp\\php666D.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:15:19] INFO:system out-----------2017-03-25 19:15:19
+[2017-03-25 19:15:19] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php8A62.tmp","C:\\Windows\\Temp\\php8A73.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:15:21] INFO:system out-----------2017-03-25 19:15:21
+[2017-03-25 19:15:21] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php90E9.tmp","C:\\Windows\\Temp\\php90FA.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:15:22] INFO:system out-----------2017-03-25 19:15:22
+[2017-03-25 19:15:22] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php9407.tmp","C:\\Windows\\Temp\\php9417.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:15:22] INFO:system out-----------2017-03-25 19:15:22
+[2017-03-25 19:15:22] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php9679.tmp","C:\\Windows\\Temp\\php9689.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:15:23] INFO:system out-----------2017-03-25 19:15:23
+[2017-03-25 19:15:23] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php9755.tmp","C:\\Windows\\Temp\\php9766.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:23] INFO:system out-----------2017-03-25 19:16:23
+[2017-03-25 19:16:23] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php81A6.tmp","C:\\Windows\\Temp\\php81B6.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:42] INFO:system out-----------2017-03-25 19:16:42
+[2017-03-25 19:16:42] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpCD86.tmp","C:\\Windows\\Temp\\phpCDA6.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:43] INFO:system out-----------2017-03-25 19:16:43
+[2017-03-25 19:16:43] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpD19D.tmp","C:\\Windows\\Temp\\phpD1AD.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:44] INFO:system out-----------2017-03-25 19:16:44
+[2017-03-25 19:16:44] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpD4BA.tmp","C:\\Windows\\Temp\\phpD4CB.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:44] INFO:system out-----------2017-03-25 19:16:44
+[2017-03-25 19:16:44] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpD587.tmp","C:\\Windows\\Temp\\phpD598.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:47] INFO:system out-----------2017-03-25 19:16:47
+[2017-03-25 19:16:47] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE1E8.tmp","C:\\Windows\\Temp\\phpE1F9.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:47] INFO:system out-----------2017-03-25 19:16:47
+[2017-03-25 19:16:47] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE2A5.tmp","C:\\Windows\\Temp\\phpE2B6.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:48] INFO:system out-----------2017-03-25 19:16:48
+[2017-03-25 19:16:48] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE372.tmp","C:\\Windows\\Temp\\phpE383.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:48] INFO:system out-----------2017-03-25 19:16:48
+[2017-03-25 19:16:48] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE43F.tmp","C:\\Windows\\Temp\\phpE44F.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:48] INFO:system out-----------2017-03-25 19:16:48
+[2017-03-25 19:16:48] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE52B.tmp","C:\\Windows\\Temp\\phpE53B.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:48] INFO:system out-----------2017-03-25 19:16:48
+[2017-03-25 19:16:48] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE5B9.tmp","C:\\Windows\\Temp\\phpE5D9.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:48] INFO:system out-----------2017-03-25 19:16:48
+[2017-03-25 19:16:48] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE676.tmp","C:\\Windows\\Temp\\phpE687.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:49] INFO:system out-----------2017-03-25 19:16:49
+[2017-03-25 19:16:49] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE734.tmp","C:\\Windows\\Temp\\phpE735.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:16:49] INFO:system out-----------2017-03-25 19:16:49
+[2017-03-25 19:16:49] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpE7E1.tmp","C:\\Windows\\Temp\\phpE7F2.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:17:01] INFO:system out-----------2017-03-25 19:17:01
+[2017-03-25 19:17:01] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php16DF.tmp","C:\\Windows\\Temp\\php16F0.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:17:33] INFO:system out-----------2017-03-25 19:17:33
+[2017-03-25 19:17:33] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php967C.tmp","C:\\Windows\\Temp\\php968C.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:18:25] INFO:system out-----------2017-03-25 19:18:25
+[2017-03-25 19:18:25] INFO:system out-----------{"image":{"name":["4D89A19AEF26321AA15969E44126ACD4.jpg","0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php616A.tmp","C:\\Windows\\Temp\\php618A.tmp"],"error":[0,0],"size":[50022,70084]}}
+[2017-03-25 19:18:25] INFO:id: 
+[2017-03-25 19:18:25] INFO:name: 发的
+[2017-03-25 19:18:25] INFO:type: 0
+[2017-03-25 19:18:25] INFO:introduction: 搞定
+[2017-03-25 19:18:25] INFO:describing: 水电费
+[2017-03-25 19:18:25] INFO:reserve_price: 1
+[2017-03-25 19:18:25] INFO:capped_price: 11
+[2017-03-25 19:18:25] INFO:image: Array
+[2017-03-25 19:18:25] INFO:specialId: 0
+[2017-03-25 19:18:25] INFO:reservePrice: 0
+[2017-03-25 19:18:25] INFO:parameters: 32:34;21:12;
+[2017-03-25 19:18:25] INFO:sellerId: 0
+[2017-03-25 19:18:25] INFO:create_time: 2017-03-25 19:18:25
+[2017-03-25 19:18:25] INFO:modify_time: 2017-03-25 19:18:25
+[2017-03-25 19:18:25] INFO:image_url: http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg,http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg
+[2017-03-25 19:19:39] INFO:system out-----------2017-03-25 19:19:39
+[2017-03-25 19:19:39] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php7F19.tmp","C:\\Windows\\Temp\\php7F2A.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:19:39] INFO:id: 
+[2017-03-25 19:19:39] INFO:name: 大锅饭
+[2017-03-25 19:19:39] INFO:type: 0
+[2017-03-25 19:19:39] INFO:introduction: 电饭锅
+[2017-03-25 19:19:39] INFO:describing: 第三方
+[2017-03-25 19:19:39] INFO:reserve_price: 1
+[2017-03-25 19:19:39] INFO:capped_price: 11
+[2017-03-25 19:19:39] INFO:image: 
+[2017-03-25 19:19:39] INFO:specialId: 0
+[2017-03-25 19:19:39] INFO:reservePrice: 0
+[2017-03-25 19:19:39] INFO:parameters: 发的:发个;12:21;
+[2017-03-25 19:19:39] INFO:sellerId: 0
+[2017-03-25 19:19:39] INFO:create_time: 2017-03-25 19:19:39
+[2017-03-25 19:19:39] INFO:modify_time: 2017-03-25 19:19:39
+[2017-03-25 19:19:39] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:24:18] INFO:system out-----------2017-03-25 19:24:18
+[2017-03-25 19:24:18] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpC3F9.tmp","C:\\Windows\\Temp\\phpC41A.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:24:18] INFO:id: 
+[2017-03-25 19:24:18] INFO:name: 大锅饭
+[2017-03-25 19:24:18] INFO:type: 0
+[2017-03-25 19:24:18] INFO:introduction: 电饭锅
+[2017-03-25 19:24:18] INFO:describing: 第三方
+[2017-03-25 19:24:18] INFO:reserve_price: 1
+[2017-03-25 19:24:18] INFO:capped_price: 11
+[2017-03-25 19:24:18] INFO:specialId: 0
+[2017-03-25 19:24:18] INFO:reservePrice: 0
+[2017-03-25 19:24:18] INFO:parameters: 发的:发个;12:21;
+[2017-03-25 19:24:18] INFO:sellerId: 0
+[2017-03-25 19:24:18] INFO:create_time: 2017-03-25 19:24:18
+[2017-03-25 19:24:18] INFO:modify_time: 2017-03-25 19:24:18
+[2017-03-25 19:24:18] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:24:37] INFO:system out-----------2017-03-25 19:24:37
+[2017-03-25 19:24:37] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\phpC9F.tmp","C:\\Windows\\Temp\\phpCBF.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:24:37] INFO:id: 
+[2017-03-25 19:24:37] INFO:name: 大锅饭
+[2017-03-25 19:24:37] INFO:type: 0
+[2017-03-25 19:24:37] INFO:introduction: 电饭锅
+[2017-03-25 19:24:37] INFO:describing: 第三方
+[2017-03-25 19:24:37] INFO:reserve_price: 1
+[2017-03-25 19:24:37] INFO:capped_price: 11
+[2017-03-25 19:24:37] INFO:specialId: 0
+[2017-03-25 19:24:37] INFO:reservePrice: 0
+[2017-03-25 19:24:37] INFO:parameters: 发的:发个;12:21;
+[2017-03-25 19:24:37] INFO:sellerId: 0
+[2017-03-25 19:24:37] INFO:create_time: 2017-03-25 19:24:37
+[2017-03-25 19:24:37] INFO:modify_time: 2017-03-25 19:24:37
+[2017-03-25 19:24:37] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:26:45] INFO:system out-----------2017-03-25 19:26:45
+[2017-03-25 19:26:45] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php1C8.tmp","C:\\Windows\\Temp\\php1D9.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:26:45] INFO:id: 
+[2017-03-25 19:26:45] INFO:name: 双方都
+[2017-03-25 19:26:45] INFO:type: 0
+[2017-03-25 19:26:45] INFO:introduction: 水电费
+[2017-03-25 19:26:45] INFO:describing: 水电费
+[2017-03-25 19:26:45] INFO:reserve_price: 1
+[2017-03-25 19:26:45] INFO:capped_price: 11
+[2017-03-25 19:26:45] INFO:special_id: 0
+[2017-03-25 19:26:45] INFO:reservePrice: 0
+[2017-03-25 19:26:45] INFO:parameters: 第三方:第三方;发的:电风扇;
+[2017-03-25 19:26:45] INFO:sellerId: 0
+[2017-03-25 19:26:45] INFO:create_time: 2017-03-25 19:26:45
+[2017-03-25 19:26:45] INFO:modify_time: 2017-03-25 19:26:45
+[2017-03-25 19:26:45] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:28:02] INFO:system out-----------2017-03-25 19:28:02
+[2017-03-25 19:28:02] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php284F.tmp","C:\\Windows\\Temp\\php286F.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:28:02] INFO:id: 
+[2017-03-25 19:28:02] INFO:name: 发送发的
+[2017-03-25 19:28:02] INFO:type: 0
+[2017-03-25 19:28:02] INFO:introduction: 第三方
+[2017-03-25 19:28:02] INFO:describing: 第三个梵蒂冈第三个
+[2017-03-25 19:28:02] INFO:reserve_price: 1
+[2017-03-25 19:28:02] INFO:capped_price: 11
+[2017-03-25 19:28:02] INFO:special_id: 0
+[2017-03-25 19:28:02] INFO:reservePrice: 0
+[2017-03-25 19:28:02] INFO:parameters: 发个:发个;
+[2017-03-25 19:28:02] INFO:seller_id: 0
+[2017-03-25 19:28:02] INFO:create_time: 2017-03-25 19:28:02
+[2017-03-25 19:28:02] INFO:modify_time: 2017-03-25 19:28:02
+[2017-03-25 19:28:02] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:29:31] INFO:system out-----------2017-03-25 19:29:31
+[2017-03-25 19:29:31] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg","4D89A19AEF26321AA15969E44126ACD4.jpg"],"type":["image\/jpeg","image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php8A3F.tmp","C:\\Windows\\Temp\\php8A4F.tmp"],"error":[0,0],"size":[70084,50022]}}
+[2017-03-25 19:29:31] INFO:id: 
+[2017-03-25 19:29:31] INFO:name: 发的发个
+[2017-03-25 19:29:31] INFO:type: 0
+[2017-03-25 19:29:31] INFO:introduction: 第三方vdgfd
+[2017-03-25 19:29:31] INFO:describing: 发的
+[2017-03-25 19:29:31] INFO:reserve_price: 1
+[2017-03-25 19:29:31] INFO:capped_price: 11
+[2017-03-25 19:29:31] INFO:special_id: 0
+[2017-03-25 19:29:31] INFO:parameters: 电风扇:地方;
+[2017-03-25 19:29:31] INFO:seller_id: 0
+[2017-03-25 19:29:31] INFO:create_time: 2017-03-25 19:29:31
+[2017-03-25 19:29:31] INFO:modify_time: 2017-03-25 19:29:31
+[2017-03-25 19:29:31] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg,http://localhost/upload/image/4D89A19AEF26321AA15969E44126ACD4.jpg
+[2017-03-25 19:33:19] INFO:system out-----------2017-03-25 19:33:19
+[2017-03-25 19:33:19] INFO:system out-----------{"image":{"name":["0299E839DD356DA67ABC2EACF37CE703.jpg"],"type":["image\/jpeg"],"tmp_name":["C:\\Windows\\Temp\\php31B.tmp"],"error":[0],"size":[70084]}}
+[2017-03-25 19:33:19] INFO:id: 
+[2017-03-25 19:33:19] INFO:name: 第三方222
+[2017-03-25 19:33:19] INFO:type: 0
+[2017-03-25 19:33:19] INFO:introduction: 第三方
+[2017-03-25 19:33:19] INFO:describing: 第三方
+[2017-03-25 19:33:19] INFO:reserve_price: 1
+[2017-03-25 19:33:19] INFO:capped_price: 11
+[2017-03-25 19:33:19] INFO:special_id: 0
+[2017-03-25 19:33:19] INFO:parameters: 
+[2017-03-25 19:33:19] INFO:seller_id: 0
+[2017-03-25 19:33:19] INFO:create_time: 2017-03-25 19:33:19
+[2017-03-25 19:33:19] INFO:modify_time: 2017-03-25 19:33:19
+[2017-03-25 19:33:19] INFO:image_url: http://localhost/upload/image/0299E839DD356DA67ABC2EACF37CE703.jpg

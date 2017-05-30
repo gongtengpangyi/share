@@ -1,0 +1,26 @@
+#admin_running-today_comm-div{
+    margin: 20px;
+}
+
+.commodity-item{
+    width: 90%;
+    float: left;
+    clear: both;
+}
+
+.commodity-item p{
+    float: left;
+    margin:60px 30px;
+}
+
+.commodity-item img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin:10px 30px;
+}
+
+.commodity-item div{
+    float: right;
+    margin:60px 20px;
+}

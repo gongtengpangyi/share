@@ -1,0 +1,23 @@
+.inner-wrap{
+    width: 90%;
+    margin: auto;
+}
+
+.inner-wrap-list{
+}
+s
+.table{
+    width:100%;
+}
+
+.tr{
+    cursor:pointer;
+    line-height: 50px;
+}
+
+td{
+    display: inline-block;
+    width: 10%;
+    margin-right:40px;
+}
+

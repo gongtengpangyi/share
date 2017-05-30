@@ -1,0 +1,36 @@
+#admin_commodity-session_create-form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.session_create_description{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.session_create_submit{
+    width: 20%;
+    margin: 20px auto;
+}
+
+.session_create_description li{
+    line-height: 50px;
+}
+
+.session_create_description li span{
+    display: inline-block;
+    line-height: inherit;
+    width: 100px;
+}
+
+.session_create_description span.fileinput_button{
+    position: relative;
+    display: inline-block;
+}
+
+.session_create_description span.fileinput_button input{
+    position: absolute;
+    right:0;
+    top: 0;
+}
+

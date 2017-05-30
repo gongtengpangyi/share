@@ -1,0 +1,15 @@
+.inner-wrap{
+    width: 90%;
+    margin: auto;
+}
+.inner-wrap-list{
+}
+.table{width:100%;}
+.tr{cursor:pointer  ;line-height: 50px;}
+.span{
+    display: inline-block;
+    width: 150px;
+    height: inherit;
+}
+
+

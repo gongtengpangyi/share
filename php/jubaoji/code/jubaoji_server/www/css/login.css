@@ -1,0 +1,172 @@
+html{width:100%;height:100%}
+body{
+    width:100%;
+    height:100%;
+    font-family:"微软雅黑";
+    position:relative;
+    background:url(../images/background.png) top no-repeat;
+}
+.login-title{
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+.login-center{
+    position:absolute;
+    left:50%;
+    top:10%;
+    margin-left:-403px;
+    width:806px;
+    height:602px;
+    background:url(../images/whitebackground.png) no-repeat;
+}
+.login-center .login-content{
+    position:absolute;
+    left:57px;
+    top:80px;
+    width:704px;
+    height:308px
+}
+.login-center .login-content .notice{
+    float:left;
+    width:354px;
+    height:300px
+}
+.login-center .login-content .notice .notice-inner{
+    width: 200px;
+    margin: 0 auto;
+}
+.login-center .login-content .notice .notice-inner .notice-inner-img{
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+.login-center .login-content .notice .notice-inner .notice-inner-p1{
+    margin-left: 17px;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+}
+.login-center .login-content .notice .notice-inner .notice-inner-p2{
+    font-size: 0.7em;
+    font-weight: 200;
+    padding-bottom: 0;
+    padding-top: 90px;
+    color: #ccc;
+}
+.login-center .login-content .login-input{
+    float:left;
+    width:350px;
+    height:300px
+}
+.login-center .login-content .login-input .login-label{
+    margin-top:30px;
+    font-size:24px;
+    height:30px;
+    line-height:30px;
+    padding-left:40px
+}
+.login-center .login-content .login-input .username{
+    margin-left:40px;
+    width:264px;
+    height:45px;
+    background-color:#fff;
+    margin-top:20px;
+    margin-bottom:15px;
+    border:1px solid;
+}
+.login-center .login-content .login-input .username .username-icon{
+    float:left;
+    width:20px;
+    height:20px;
+    margin-top:12px;
+    margin-left:18px;
+    margin-right:18px;
+    background:url(../images/user.png) no-repeat
+}
+.login-center .login-content .login-input .username input[type=text]{
+    float:left;
+    border:0 transparent;
+    height:20px;
+    margin-top:12px;
+    width:190px;
+    font-size:14px;
+    outline:none
+}
+.login-center .login-content .login-input .username input[type=text]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.login-center .login-content .login-input .username input[type=text]:focus{
+    border:0 transparent
+}
+.login-center .login-content .login-input .username input[type=text].focus{
+    border:0 transparent
+}
+.login-center .login-content .login-input .password{
+    margin-left:40px;
+    width:264px;
+    height:45px;
+    background-color:#fff;
+    margin-top:20px;
+    border:1px solid;
+}
+.login-center .login-content .login-input .password .password-icon{
+    float:left;
+    width:20px;
+    height:20px;
+    margin-top:12px;
+    margin-left:18px;
+    margin-right:18px;
+    background:url(../images/password.png) no-repeat
+}
+.login-center .login-content .login-input .password input[type=password]{
+    float:left;
+    border:0 transparent;
+    height:20px;
+    margin-top:12px;
+    width:190px;
+    font-size:14px;
+    outline:none
+}
+.login-center .login-content .login-input .password input[type=password]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.login-center .login-content .login-input .password input[type=password]:focus{
+    border:0 transparent
+}
+.login-center .login-content .login-input .password input[type=password].focus{
+    border:0 transparent
+}
+.login-center .login-content .login-input .radio{
+    margin-left: 120px;
+    width: 264px;
+    height: 45px;
+    margin-top: 20px;
+}
+.login-center .login-content .login-input .login-btn{
+    margin-left:40px;
+    width:264px;
+    height:48px;
+    line-height:48px;
+    color:#fff;
+    font-size:22px;
+    background:url(../images/login_btnbg.png);
+    text-align:center;cursor:pointer
+}
+.login-center .login-content .login-input .login-btn:hover{
+    background:url(../images/login_btnbg_hover.png)
+}
+.login-center .login-content .login-input .login-index-occupancy{
+    font-size: 0.8em;
+    margin-top: 54px;
+    width: 264px;
+    height: 45px;
+    margin-left: 148px;
+}
+.login-center .login-content .login-input .login-index-occupancy a{
+    color: #428bca;
+    text-decoration: none;
+}

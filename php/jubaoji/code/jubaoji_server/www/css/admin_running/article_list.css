@@ -1,0 +1,23 @@
+.article-item{
+    width: 90%;
+    float: left;
+    clear: both;
+    margin:20px 50px;
+    cursor: pointer;
+}
+
+.article-title{
+    float: left;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.article-subtitle{
+    margin:5px 20px;
+    float: left;
+}
+
+.article-create_time{
+    float: right;
+}

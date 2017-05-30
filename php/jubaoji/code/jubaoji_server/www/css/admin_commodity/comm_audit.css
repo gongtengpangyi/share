@@ -1,0 +1,52 @@
+.inner-wrap{
+    width: 90%;
+    margin: auto;
+}
+
+.inner-wrap-list{
+}
+
+.table{
+    width:100%;
+}
+
+#divWrap p{
+    cursor:pointer  ;line-height: 50px;
+    border-top: 1px solid;
+}
+
+#divWrap p span{
+    width: 14%;
+    line-height: 50px;
+    display: inline-block;
+}
+
+#divWrap ul{
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+#divWrap ul li{
+    line-height:30px;
+}
+
+.span_input_left{
+    /*margin-left: 5px;*/
+}
+
+.detail_info_span{
+    width: 64px;
+    /*background: url("../../images/btn_downArrow.png") no-repeat right;*/
+}
+
+.detail_info_span_arrow{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* Internet Explorer */
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); /* Opera */
+}
+
+.detail_info_ul_hide{
+    display: none;
+}

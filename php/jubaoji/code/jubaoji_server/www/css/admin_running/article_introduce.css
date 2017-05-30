@@ -1,0 +1,39 @@
+.article-title{
+    text-align: center;
+    margin: 20px;
+    height: 60px;
+    font-size: 50px;
+}
+
+.article-subtitle{
+    text-align: center;
+    margin: 20px;
+    height: 40px;
+    font-size: 35px;
+}
+
+.article-content{
+    margin-top: 50px;
+    width: 90%;
+    min-height: 400px;
+    margin-left: 5%;
+    font-size: 20px;
+    text-indent:40px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break:break-all;
+    overflow:hidden;
+}
+
+
+.article-image{
+    text-align: center;
+}
+
+.article-image img{
+    max-width: 300px;
+    max-height: 300px;
+}

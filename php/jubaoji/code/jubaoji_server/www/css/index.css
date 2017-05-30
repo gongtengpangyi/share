@@ -1,0 +1,20 @@
+.main-part{
+    margin-bottom: 30px;
+}
+
+.main-part ul{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.main-part ul li{
+    width: 33%;
+    border: 1px solid #e9ecf1;
+    margin-left: -1px;
+    float: left;
+    line-height: 150px;
+
+}
+

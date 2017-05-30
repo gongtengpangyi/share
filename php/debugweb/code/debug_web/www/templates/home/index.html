@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <%include file="common.html"%>
+    <script type="text/javascript" src="js/home.js"></script>
+    <link type="text/css" href="css/home.css" rel="stylesheet" />
+</head>
+<body>
+<%include file="title.html"%>
+<%include file="banner.html"%>
+<div id="home" class="home">
+    <p id="home-title-teachers" class="home-title">指导老师</p>
+    <img id="home-teachers-add-btn" class="btn show-limit-user0 show-limit-admin" src="img/btn_add.jpg">
+    <hr class="small"/>
+    <p class="home-title">主要方向</p>
+        <div id="home-majors" class="home-majors"></div>
+        <img id="home-majors-add-btn" class="btn show-limit-user0 show-limit-admin" src="img/btn_add.jpg">
+    <hr class="small"/>
+    <div id="home-admin" class="home-admin"></div>
+</div>
+<!--添加教师窗口-->
+<div id="home-teachers-add-div" class="home-teachers">
+    <img src="img/user_icon.jpg" class="home-teachers-add-icon"/>
+    <input type="text" class="home-teachers-add-account home-teachers-add-name" placeholder="请输入账号">
+    <input type="text" class="home-teachers-add-username home-teachers-add-name" placeholder="请输入姓名">
+    <div class="home-teachers-add-majors">
+        <p>请选择专业方向:</p>
+    </div>
+    <textarea type="text" class="home-teachers-add-introduce" placeholder="请输入详细介绍"></textarea>
+    <img id="home-teachers-add-save" src="img/btn_save.jpg" class="btn"/>
+</div>
+<!--添加方向窗口-->
+
+</body>
+</html>

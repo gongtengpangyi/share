@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论坛</title>
+    <%include file="common.html"%>
+    <script type="text/javascript" src="js/talk.js"></script>
+    <link type="text/css" href="css/talk.css" rel="stylesheet" />
+</head>
+<body>
+<%include file="title.html"%>
+<%include file="banner.html"%>
+<div id="talk-reports" class="talk-reports">
+    <p id="talk-reports-title" class="talk-reports-title">本周小结</p>
+    <img id="talk-reports-write-btn" class="btn show-limit-user1 show-limit-user0" src="img/btn_write.jpg">
+    <p class="talk-reports-btn-mouseOut">></p>
+    <p class="talk-reports-btn-mouseOut"><</p>
+</div>
+<hr class="small">
+<div class="talk-students">
+    <p class="talk-students-title">当前成员</p>
+    <table id="talk-students-table" border="1">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>年级</td>
+            <td>方向</td>
+        </tr>
+    </table>
+    <img id="talk-students-add-btn" class="btn show-limit-user0 show-limit-admin" src="img/btn_add.jpg">
+</div>
+<div id="talk-divide" class="talk-divide"></div>
+<div id="talk-invitations" class="talk-invitations">
+    <!--<div class="talk-invitations-main">-->
+        <!--<img src="img/user_icon.jpg" class="talk-invitations-icon"/>-->
+        <!--<p class="talk-invitations-user">xxx</p>-->
+        <!--<p class="talk-invitations-time">2016-01-01 01:01:01</p>-->
+        <!--<p class="talk-invitations-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>-->
+    <!--</div>-->
+    <!--<div class="talk-invitations-reply">-->
+        <!--<a class="talk-invitations-reply-name">李四</a>-->
+        <!--回复-->
+        <!--<a class="talk-invitations-reply-name">张三</a>:-->
+        <!--SD卡收到回复看电视固话费舒服鳄鱼 发动机开始加快了丰厚的根据客户梵蒂冈大街上客户反馈好地方就是看到回复加快速度看到结果是快递费-->
+    <!--</div>-->
+    <!--<hr class="small">-->
+</div>
+<img id="talk-invitations-more" src="img/more.jpg" class="talk-invitations-more"/>
+<button id="talk-invitation-send" name="0">发帖</button>
+<!--写报告窗口-->
+</body>
+</html>

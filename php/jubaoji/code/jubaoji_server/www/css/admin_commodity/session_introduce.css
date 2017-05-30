@@ -1,0 +1,19 @@
+#session_introduction p,button{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.Session_introduce_commodity_table{
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid;
+}
+
+.Session_introduce_commodity_table td{
+    text-align: center;
+    line-height:35px;
+}
+
+#session_introduce-dialogTable tr>*{
+    width:15%;
+}

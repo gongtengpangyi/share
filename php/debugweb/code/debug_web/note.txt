@@ -1,0 +1,37 @@
+debug_web工程结构：
+    www（工程目录）：
+        moudle（php代码）：
+            controller（控制器）：
+                testController(测试类)
+            model（model类）：
+                testModel（测试类）
+        css(css代码):
+            common(通用css)
+        js（js代码）：
+            common(通用js)
+            jquery(jquery包)
+            single(各模块父类single模式实现)
+            test(测试js)
+        templates（html代码）：
+            test（测试模板）：
+                index.html
+                test.html
+            common(导入通用的js和css)
+        index.php（程序入口）
+
+    Xphp（自定义框架）：
+        common（用于通用的php文件）：
+            function（通用函数存放）
+            config（配置文件）
+        base（基本类包，所有工程中的类都要基于此开发，用作抽象提取）
+            lib（第三方库）
+                smarty（smarty框架）
+            db（数据库）
+                mysql（用pdo实现mysql连接)
+            core(xphp主代码)
+                log(打日志)
+                model（所有model的父类）
+                controller(所有controller的父类)
+                app(应用程序类)
+         Xphp（xphp的配置）
+

@@ -1,0 +1,24 @@
+.inner-wrap{
+    width: 90%;
+    margin: auto;
+}
+
+.inner-wrap-list{
+}
+
+.table{
+    width:100%;
+}
+
+.tr{
+    cursor:pointer;
+    line-height: 50px;
+}
+
+#inner-wrap-list table tr{
+    cursor: pointer;
+}
+
+#inner-wrap-list table td img{
+    width: 100px;
+}

@@ -1,0 +1,10 @@
+.admin_form-all-item{
+    clear: both;
+    margin: 20px;
+    float: left;
+}
+
+.admin_form-all-item p{
+    float: left;
+    margin-left: 30px;
+}

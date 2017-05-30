@@ -1,0 +1,35 @@
+.banner-image{
+    text-align: center;
+}
+
+.banner-image img{
+    cursor: pointer;
+}
+
+.banner-submit{
+    width: 100%;
+    text-align: center;
+}
+
+.banner-submit input{
+    font-size: 32px;
+}
+
+#admin_running-banner_create-div{
+    clear: both;
+}
+
+#admin_running-banner_create-list-div{
+
+}
+
+#admin_running-banner_create-list-div .banner{
+    clear: both;
+    width: 200px;
+}
+
+.banner-div{
+    float: left;
+    width: 250px;
+    margin: 20px;
+}
