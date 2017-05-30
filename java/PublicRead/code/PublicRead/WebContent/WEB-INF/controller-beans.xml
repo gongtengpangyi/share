@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+>
+	
+	<bean id="userController" class="cn.hdu.wlw.client.controller.phone.UserController">
+		<property name="userBiz"><ref bean='userBiz'/></property>
+		<property name="userCareBiz"><ref bean='userCareBiz'/></property>
+		<property name="tagBiz"><ref bean='tagBiz'/></property>
+		<property name="articleBiz"><ref bean='articleBiz'/></property>
+		<property name="articleTagBiz"><ref bean='articleTagBiz'/></property>
+		<property name="userTagBiz"><ref bean='userTagBiz'/></property>
+	</bean>
+	
+	<bean id="homeController" class="cn.hdu.wlw.client.controller.phone.HomeController">
+		<property name="userBiz"><ref bean='userBiz'/></property>
+		<property name="articleBiz"><ref bean='articleBiz'/></property>
+		<property name="articleTagBiz"><ref bean='articleTagBiz'/></property>
+		<property name="tagBiz"><ref bean='tagBiz'/></property>
+		<property name="userReadBiz"><ref bean='userReadBiz'/></property>
+		<property name="userLikeArticleBiz"><ref bean='userLikeArticleBiz'/></property>
+		<property name="userTagBiz"><ref bean='userTagBiz'/></property>
+		<property name="userBlackBiz"><ref bean='userBlackBiz'/></property>
+		<property name="userCareBiz"><ref bean='userCareBiz'/></property>
+	</bean>
+	
+	<bean id="relationController" class="cn.hdu.wlw.client.controller.phone.RelationController">
+		<property name="userBiz"><ref bean='userBiz'/></property>
+		<property name="userBlackBiz"><ref bean='userBlackBiz'/></property>
+		<property name="userCareBiz"><ref bean='userCareBiz'/></property>
+	</bean>
+	
+	<bean id="snowController" class="cn.hdu.wlw.client.controller.phone.SnowController">
+		<property name="userReadBiz"><ref bean='userReadBiz'/></property>
+		<property name="userLikeArticleBiz"><ref bean='userLikeArticleBiz'/></property>
+		<property name="articleTagBiz"><ref bean='articleTagBiz'/></property>
+	</bean>
+	
+	<bean id="talkController" class="cn.hdu.wlw.client.controller.phone.TalkController">
+		<property name="tagBiz"><ref bean='tagBiz'/></property>
+		<property name="userTagBiz"><ref bean='userTagBiz'/></property>
+		<property name="userBiz"><ref bean='userBiz'/></property>
+		<property name="flockBiz"><ref bean='flockBiz'/></property>
+		<property name="flockUserBiz"><ref bean='flockUserBiz'/></property>
+	</bean>
+	
+	<bean id="findController" class="cn.hdu.wlw.client.controller.phone.FindController">
+		<property name="articleTagBiz"><ref bean="articleTagBiz"/></property>
+		<property name="userFindBiz"><ref bean="userFindBiz"/></property>
+		<property name="userBiz"><ref bean="userBiz"/></property>
+	</bean>
+	
+	<import resource="biz-beans.xml" />	
+</beans>

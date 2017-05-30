@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!--
+		- Application context definition for JPetStore's business layer. -
+		Contains bean references to the transaction manager and to the DAOs in
+		- dataAccessContext-local/jta.xml (see web.xml's
+		"contextConfigLocation").
+	-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+>
+
+    <bean id="tagBiz" name="tagBiz" class="cn.hdu.wlw.console.biz.TagBizImpl">
+		<property name="dao" ref="tagDao"></property>
+	</bean>
+	<bean id="userBiz" name="userBiz" class="cn.hdu.wlw.console.biz.UserBizImpl">
+		<property name="dao" ref="userDao"></property>
+	</bean>
+	<bean id="articleBiz" name="articleBiz" class="cn.hdu.wlw.console.biz.ArticleBizImpl">
+		<property name="dao" ref="articleDao"></property>
+	</bean>
+	<bean id="userTagBiz" name="userTagBiz" class="cn.hdu.wlw.console.biz.UserTagBizImpl">
+		<property name="dao" ref="userTagDao"></property>
+	</bean>
+	<bean id="articleTagBiz" name="articleTagBiz" class="cn.hdu.wlw.console.biz.ArticleTagBizImpl">
+		<property name="dao" ref="articleTagDao"></property>
+	</bean>
+	<bean id="userCareBiz" name="userCareBiz" class="cn.hdu.wlw.console.biz.UserCareBizImpl">
+		<property name="dao" ref="userCareDao"></property>
+	</bean>
+	<bean id="userBlackBiz" name="userBlackBiz" class="cn.hdu.wlw.console.biz.UserBlackBizImpl">
+		<property name="dao" ref="userBlackDao"></property>
+	</bean>
+	<bean id="userReadBiz" name="userReadBiz" class="cn.hdu.wlw.console.biz.UserReadBizImpl">
+		<property name="dao" ref="userReadDao"></property>
+	</bean>
+	<bean id="userLikeArticleBiz" name="userLikeArticleBiz" class="cn.hdu.wlw.console.biz.UserLikeArticleBizImpl">
+		<property name="dao" ref="userLikeArticleDao"></property>
+	</bean>
+	<bean id="flockBiz" name="flockBiz" class="cn.hdu.wlw.console.biz.FlockBizImpl">
+		<property name="dao" ref="flockDao"></property>
+	</bean>
+	<bean id="flockUserBiz" name="flockUserBiz" class="cn.hdu.wlw.console.biz.FlockUserBizImpl">
+		<property name="dao" ref="flockUserDao"></property>
+	</bean>
+	<bean id="userFindBiz" name="userFindBiz" class="cn.hdu.wlw.console.biz.UserFindBizImpl">
+		<property name="dao" ref="userFindDao"></property>
+	</bean>
+	<bean id="packBiz" name="packBiz" class="cn.hdu.wlw.console.biz.PackBizImpl">
+		<property name="dao" ref="packDao"></property>
+	</bean>
+	<import resource="dao-beans.xml" />		
+</beans>

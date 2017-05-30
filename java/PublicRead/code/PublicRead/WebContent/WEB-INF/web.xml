@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>PublicRead</display-name>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/applicationContext.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+  </listener>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+  	<listener-class>
+  		cn.hdu.wlw.client.server.ServerContextListener
+  	</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>testServlet</servlet-name>
+    <servlet-class>com.example.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testServlet</servlet-name>
+    <url-pattern>/test/*</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>phoneServlet</servlet-name>
+    <servlet-class>cn.hdu.wlw.client.servlet.PhoneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>phoneServlet</servlet-name>
+    <url-pattern>/phone/*</url-pattern>
+  </servlet-mapping>
+</web-app>

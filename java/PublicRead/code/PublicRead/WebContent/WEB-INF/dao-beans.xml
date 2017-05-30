@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	<bean id="tagDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.Tag</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.User</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="articleDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.Article</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="articleTagDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.ArticleTag</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userTagDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserTag</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userCareDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserCare</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userBlackDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserBlack</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userReadDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserRead</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userLikeArticleDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserLikeArticle</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="flockDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.Flock</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="flockUserDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.FlockUser</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+		<bean id="userFindDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.UserFind</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+		<bean id="packDao" class="cn.hdu.wlw.console.dao.BaseDaoImpl">
+		<constructor-arg>
+			<value>cn.hdu.wlw.model.Pack</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>java.lang.Long</value>
+		</constructor-arg>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>
