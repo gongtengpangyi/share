@@ -15,7 +15,7 @@ public class ContainerInitListener implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent arg0) {
 		System.out.println("context initing...");
 		ContextReader reader = new ContextReader();
-		reader.parseXml();
+		reader.parseXml("/context.xml");
 		
 	}
 

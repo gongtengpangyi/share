@@ -64,6 +64,8 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 		String sql = "insert into " + dbTable.name() + "(";		
 		// 将values后缀语句初始化
 		String sqlValue = "values (";
+		// 初始化用于查询id的SQL语句
+		String sqlFind = "from " + clazz.getName() + " o where ";
 		// 初始化参数键值对
 		Map<String, Object> params = new HashMap<String, Object>();		
 		// 获取泛型类的所有参数
@@ -84,6 +86,8 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 			sql = sql + dbField.name() + ",";	
 			// 将字段对应变量的名字以占位符形式绑定在values语句中
 			sqlValue = sqlValue + ":" + field.getName() + ",";		
+			// 用所有传入存储的参数去查询ID
+			sqlFind = sqlFind + "o." + field.getName() + "=:" +field.getName() + " and ";
 			// 将占位符参数键值对填充到map中
 			params.put(field.getName(), getFieldValue(model, field, dbField.foreignKey()));	
 		}
@@ -91,8 +95,10 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 		 * 最后拼接完整的SQL语句并用DataBase对象去执行
 		 */
 		sql = sql.substring(0, sql.length() - 1) + ") " + sqlValue.substring(0, sqlValue.length() - 1) + ");";
+		sqlFind = sqlFind.substring(0, sqlFind.length()-5) + " order by o." + dbTable.keyName() + " desc;";
 		System.out.println(sql);
 		db.excute(sql, params);
+		model.setId(this.query(sqlFind, params).get(0).getId());
 	}
 
 	@Override
@@ -198,6 +204,7 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 			}
 
 		}
+		System.out.println(sql);
 		/*
 		 * 前面匹配替换了具体的where语句的参数，之后就是正式查询并处理结果了
 		 */

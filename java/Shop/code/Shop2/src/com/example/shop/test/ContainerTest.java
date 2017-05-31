@@ -19,14 +19,14 @@ public class ContainerTest {
 	@Test
 	public void testParseXml() {
 		ContextReader reader = new ContextReader();
-		reader.parseXml();
+		reader.parseXml("/context.xml");
 		reader.getContainer().display();
 	}
 	
 	@Test
 	public void testGetBean() {
 		ContextReader reader = new ContextReader();
-		reader.parseXml();
+		reader.parseXml("/context.xml");
 		AdminBiz biz = (AdminBiz) Container.instance().getBean("adminBiz");
 		biz = (AdminBiz) ToolContrainer.getBean("adminBiz");
 		Admin admin = biz.findByAccount("mmm");

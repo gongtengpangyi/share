@@ -27,21 +27,7 @@
 	</bean>
 	
 	<!-- BIZ -->
-	<bean id="adminBiz" class="com.example.shop.console.biz.AdminBizImpl">
-		<property name="dao" ref="adminDao"></property>
-	</bean>
-	
-	<bean id="commodityBiz" class="com.example.shop.console.biz.CommodityBizImpl">
-		<property name="dao" ref="commodityDao"></property>
-	</bean>
-	
-	<bean id="commodityTypeBiz" class="com.example.shop.console.biz.CommodityTypeBizImpl">
-		<property name="dao" ref="commodityTypeDao"></property>
-	</bean>
-	
-	<bean id="supplierBiz" class="com.example.shop.console.biz.SupplierBizImpl">
-		<property name="dao" ref="supplierDao"></property>
-	</bean>
+	<import src="/biz-beans.xml"></import>
 	
 	<!-- Controller -->
 	<bean id="userController" class="com.example.shop.client.controller.web.UserController">

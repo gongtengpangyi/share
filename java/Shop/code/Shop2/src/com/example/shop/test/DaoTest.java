@@ -34,6 +34,7 @@ public class DaoTest {
 		admin.setAccount("woteme");
 		admin.setPass("tebieshuai");
 		dao.save(admin);
+		System.out.println(admin.getId());
 	}
 	
 	@Test

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<beans>
+	<!-- BIZ -->
+	<bean id="adminBiz" class="com.example.shop.console.biz.AdminBizImpl">
+		<property name="dao" ref="adminDao"></property>
+	</bean>
+	
+	<bean id="commodityBiz" class="com.example.shop.console.biz.CommodityBizImpl">
+		<property name="dao" ref="commodityDao"></property>
+	</bean>
+	
+	<bean id="commodityTypeBiz" class="com.example.shop.console.biz.CommodityTypeBizImpl">
+		<property name="dao" ref="commodityTypeDao"></property>
+	</bean>
+	
+	<bean id="supplierBiz" class="com.example.shop.console.biz.SupplierBizImpl">
+		<property name="dao" ref="supplierDao"></property>
+	</bean>
+</beans>

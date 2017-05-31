@@ -62,6 +62,7 @@ public class RequestMapping {
 		controller.beforeAction(req);
 		// 先设置请求结果为失败
 		String result = IController.ERROR;
+		MappingAction action = null;
 		try {
 			@SuppressWarnings("unchecked")
 			// 获取Controller的class
@@ -74,7 +75,7 @@ public class RequestMapping {
 				/*
 				 * 遍历所有方法
 				 */
-				MappingAction action = method.getAnnotation(MappingAction.class);
+				action = method.getAnnotation(MappingAction.class);
 				if (action!=null && action.name().equals(getAction())) {
 					/*
 					 * 当查询到所需要映射的方法之后，获取方法的所有参数的parameter对象
@@ -104,10 +105,11 @@ public class RequestMapping {
 					}
 					// 执行方法
 					method.invoke(controller, paramsValue);
+					result = IController.SUCCESS;
+					return;
 				}
 			}	
 			// 如果顺利执行完毕没有异常就把请求结果设置为成功
-            result = IController.SUCCESS;
 		} catch (IllegalAccessException e) {
 			System.out.println("参数不对");
 			e.printStackTrace();
@@ -121,6 +123,7 @@ public class RequestMapping {
 			try {
 				// 执行请求处理后的函数
 				controller.afterAction(resp, result);
+				controller.response(req, resp, result, action);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}			

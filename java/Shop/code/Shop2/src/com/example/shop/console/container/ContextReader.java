@@ -29,16 +29,17 @@ public class ContextReader {
 	
 	/**
 	 * 解析XML将其变为beanMap
+	 * @param filePathStr 文件路径
 	 */
 	@SuppressWarnings("unchecked")
-	public void parseXml(){
+	public void parseXml(String filePathStr){
 		/**
 		 * 先读取XML，这个没啥好说的
 		 */
 		SAXReader reader = new SAXReader();
 		URI filePath = null;
 		try {
-			filePath = this.getClass().getResource("context.xml").toURI();
+			filePath = this.getClass().getResource(filePathStr).toURI();
 		} catch (URISyntaxException e1) {
 			e1.printStackTrace();
 		}
@@ -52,13 +53,30 @@ public class ContextReader {
 			// 获取根节点，即beans节点
 			beansElement = document.getRootElement();
 			// 获取bean节点列表
-			List<Element> beanElementList = beansElement.elements();
+			List<Element> beanElementList = beansElement.elements("bean");
+			// 获取import的节点
+			addImportBeans(beansElement);
 			for (Element beanElement : beanElementList) {
 				// 遍历并添加在所有的
 				this.addBeanInfo(beanElement);
 			}
 		} catch(DocumentException e) {
 			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 
+	 * @param beansElement
+	 */
+	public void addImportBeans(Element beansElement) {
+		@SuppressWarnings("unchecked")
+		List<Element> importElements = beansElement.elements("import");
+		if (importElements == null || importElements.size()<=0) {
+			return;
+		}
+		for (Element importElement : importElements) {
+			parseXml(importElement.attributeValue("src"));
 		}
 	}
 	

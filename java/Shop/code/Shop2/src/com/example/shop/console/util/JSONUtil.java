@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import net.sf.json.JSONObject;
+import net.sf.json.JSONSerializer;
+import net.sf.json.xml.XMLSerializer;
 
 /**
  * 用于便捷操作JSONObject对象
@@ -107,6 +109,17 @@ public class JSONUtil {
 			e.printStackTrace();
 		}	
 		return json;
+	}
+	
+	/**
+	 * JSON转成XML
+	 * @param jsonString JSON字符串
+	 * @return XML XML字符串
+	 */
+	public static String json2xml(String jsonString) {
+        XMLSerializer xmlSerializer = new XMLSerializer();
+        String xml = xmlSerializer.write(JSONSerializer.toJSON(jsonString));
+        return xml;
 	}
 	
 }

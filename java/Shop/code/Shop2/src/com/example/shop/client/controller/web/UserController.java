@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import com.example.shop.client.controller.BaseController;
 import com.example.shop.client.controller.IController;
 import com.example.shop.client.mapping.MappingAction;
+import com.example.shop.client.mapping.MappingAction.Do;
 import com.example.shop.client.mapping.MappingParam;
 import com.example.shop.console.biz.AdminBiz;
 import com.example.shop.console.util.JSONUtil;
@@ -23,7 +24,7 @@ public class UserController extends BaseController implements IController {
 		System.out.println("in the userController");
 	}
 
-	@MappingAction(name = "login")
+	@MappingAction(name = "login", doAction=Do.XML)
 	public void login(@MappingParam("account") String account, @MappingParam("password") String password) {
 		Admin admin = adminBiz.findByAccount(account);
 		if (admin == null) {
