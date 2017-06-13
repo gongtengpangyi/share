@@ -1,6 +1,8 @@
 package com.example.shop.console.dao;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -182,23 +184,24 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 			 * 遍历正则匹配的所有成功结果
 			 */
 			try {
-				if(mat.group().matches("o\\.[a-z|A-Z]*\\.")) {
+				String str = mat.group();
+				if(str.matches("o\\.[a-z|A-Z]*\\.(.*)")) {
 					// 如果是o.xxx.yyy形式，说明变量本身就是一个model类对象
 					// （不过目前还没有实现，不支持）
-					sql = getObjectSql(sql, mat.group());
+					sql = getObjectSql(sql, str.substring(2), clazz);
 					continue;
-				} else if (mat.group().equals("o.id")) {
+				} else if (str.equals("o.id")) {
 					// 如果是id，因为是在父类中定义所以直接执行
-					sql = sql.replace(mat.group(), "o." + clazz.getAnnotation(DBTable.class).keyName());
+					sql = sql.replace(str, "o." + clazz.getAnnotation(DBTable.class).keyName());
 					continue;
 				}
 				// 如果前两者都不是就根据名字去查询变量
-				Field field = clazz.getDeclaredField(mat.group().substring(2));
+				Field field = clazz.getDeclaredField(str.substring(2));
 				if (field == null) {
 					continue;
 				}
 				// 将匹配结果替换为数据库字段名字，仍旧是o.xxx形式
-				sql = sql.replace(mat.group(), "o." + field.getAnnotation(DBField.class).name());
+				sql = sql.replace(str, "o." + field.getAnnotation(DBField.class).name());
 			} catch (NoSuchFieldException | SecurityException e) {
 				continue;
 			}
@@ -235,7 +238,7 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 						// 如果不是外键，即不是以model类对象（虽然目前还不支持）为变量，则将其set进model对象中
 						ModelUtil.setValue(model, field.getName(), value);
 					} else {
-						// 如果是的，那。。。现在还没实现
+						// 如果是的，那需要递归使用查询
 						setForeignValue(model, field, value);
 					}
 				}
@@ -287,12 +290,33 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 	/**
 	 * 获取外键字段的值
 	 * @param model 对象
-	 * @param field 字段
+	 * @param field 变量
 	 * @param foreignKey 外键匹配字符串
 	 * @return 值
 	 */
 	private Object getForeignFieldValue(T model, Field field, String foreignKey) {
-		// TODO:
+		// 先获取外键所约束的表的主键名称（目前都是id，但是日后会继续扩张）
+//		String key = foreignKey.split(".")[1];
+		// 获取在类中的get函数的名字
+		String getMethodName = "get" + field.getName().substring(0, 1).toUpperCase() + field.getName().substring(1);
+		try {
+			// 动态调用get函数，取出值
+			Method getMethod = clazz.getDeclaredMethod(getMethodName);
+			Entity obj = (Entity) getMethod.invoke(model);
+			// 将取出的值得主键的值取出
+			//TODO: 可扩
+			return obj.getId();
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 	
@@ -301,23 +325,83 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 	 * @param sql SQL语句
 	 * @param str 对象形式的值
 	 * @return 兼容完成后的SQL
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
 	 */
-	public String getObjectSql(String sql, String str) {
-		//TODO:
-		str = str.substring(2);
-//		String object = str.substring(0, str.indexOf("."));
-		
-		return sql;
+	public String getObjectSql(String sql, String str, Class<?> myClazz) throws NoSuchFieldException, SecurityException {
+		// 
+		String s = sql.substring(sql.indexOf(str));
+		s = s.substring(s.indexOf("="));
+		// 要获取的对象名
+		String object = str.substring(0, str.indexOf("."));
+		// 对象的内部变量名
+		String next = str.substring(str.indexOf(".") + 1);
+		// 获取变量
+		Field field = myClazz.getDeclaredField(object);
+		if (field == null) {
+			return sql;
+		}
+		// 组成替换字符串
+		String repSql = field.getAnnotation(DBField.class).name() + " = (select ";
+		// 获取变量的类
+		Class<?> childClass = field.getType();
+		// 获取变量外键表
+		DBTable fieldTable = childClass.getAnnotation(DBTable.class);
+		// 字符串拼接
+		repSql = repSql + fieldTable.keyName() + " from " + fieldTable.name() + " where " + next + " ";
+		// 将匹配结果替换为数据库字段名字，仍旧是o.xxx形式
+		sql = sql.replace(str, repSql);
+		// 匹配等号后的内容
+		Pattern pat = Pattern.compile("[^\\s]*");
+		Matcher mat = pat.matcher(s);
+		if (mat.find()) {
+			// 在等号后的内容后面加上后括号
+			String key = mat.group();
+			sql = sql.replace(key, key + ")");
+		}
+		// 如果还存在下一级的变量，递归
+		if(next == null || next.equals("")) {
+			return sql;
+		} else if(next.indexOf(".")>0) {
+			return getObjectSql(sql, next, field.getType());
+		} else if(next.equals("id")) {
+			// 如果是id
+			// 将匹配结果替换为数据库字段名字
+			sql = sql.replace(next, fieldTable.keyName());
+			return sql;
+		} else {
+			Field childField = clazz.getDeclaredField(next);
+			// 将匹配结果替换为数据库字段名字
+			sql = sql.replace(next, childField.getAnnotation(DBField.class).name());
+			return sql;
+		}
 	}
 	
 	/**
-	 * 
-	 * @param model
-	 * @param field
-	 * @param value
+	 * 为有外键的查询结果赋值
+	 * @param model 模型对象
+	 * @param field 变量对象
+	 * @param value 外键的值
 	 */
 	private void setForeignValue(T model, Field field, Object value) {
-		//TODO:
+		// 初始化外键表所对应的DAO
+		Dao<?> childDao = new DaoImpl<>(field.getType());
+		String methodName = "set" + field.getName().substring(0, 1).toUpperCase() + field.getName().substring(1);
+		try {
+			Method setMethod = clazz.getDeclaredMethod(methodName, field.getType());
+			setMethod.invoke(model, childDao.findById(Integer.valueOf((String) value)));
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 	/**
@@ -326,7 +410,7 @@ public class DaoImpl<T extends Entity> implements Dao<T> {
 	 * @return 是否为合法外键字符串
 	 */
 	private boolean isForeignKeyAble(String foreignKey) {
-		String expr = "[a-z|A-Z]*.[a-z|A-Z]*";
+		String expr = "[a-z|A-Z]*";
 		return foreignKey != null && !foreignKey.equals("") && foreignKey.matches(expr);
 	}
 

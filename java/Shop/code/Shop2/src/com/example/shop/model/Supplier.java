@@ -38,4 +38,9 @@ public class Supplier extends Entity{
 		this.tel = tel;
 	}
 
+	@Override
+	public String toString() {
+		return "Supplier [name=" + name + ", addr=" + addr + ", tel=" + tel + "]";
+	}
+
 }

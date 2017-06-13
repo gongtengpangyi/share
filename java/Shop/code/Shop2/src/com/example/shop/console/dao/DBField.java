@@ -27,7 +27,7 @@ public @interface DBField {
 	String type() default "varchar";
 	
 	/*
-	 * 外键约束，内容类似于house.id（采用的是java代码中类的首字母小写格式，非数据库表名字）
+	 * 外键约束，描述外键在所在表所对应的model类中的变量名
 	 */
 	String foreignKey() default "";
 	
