@@ -31,7 +31,9 @@ public class Container {
 	
 	public static Container instance() {
 		if (CONTAINER == null || !(CONTAINER instanceof Container)) {
-			CONTAINER = new Container();
+			synchronized (Container.class) {				
+				CONTAINER = new Container();
+			}
 		}
 		return CONTAINER;
 	}
